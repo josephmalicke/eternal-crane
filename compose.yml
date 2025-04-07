@@ -1,0 +1,21 @@
+services:
+  eternal-crane-db:
+    image: postgres:latest
+    container_name: eternal-crane-db
+    environment:
+      POSTGRES_USER: eternal-crane
+      POSTGRES_PASSWORD: eternal-crane
+      POSTGRES_DB: eternal-crane
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - eternal-crane-network
+
+volumes:
+  postgres_data:
+
+networks:
+  eternal-crane-network:
+    driver: bridge
