@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+.next
+node_modules
+/app/(payload)/*
+!/app/(payload)/collections
+!/app/(payload)/util
+!/app/(payload)/payload.config.ts
