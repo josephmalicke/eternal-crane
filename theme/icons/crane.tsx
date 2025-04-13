@@ -10,7 +10,7 @@ export const CraneIcon = ({ className, ...props }: SvgComponentProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 3072 3072"
-    className={cn(className, 'fill-amber-500 h-32 w-32')}
+    className={cn(className, 'fill-amber-500 h-16 w-16')}
     {...props}
   >
     <path

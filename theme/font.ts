@@ -1,17 +1,16 @@
-import { Geist, Great_Vibes } from 'next/font/google'
-import '@/theme/css/globals.css'
+import { Open_Sans, Cinzel } from 'next/font/google'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const cinzel = Cinzel({
+  variable: '--font-cinzel',
   subsets: ['latin'],
+  weight: ['600'],
 })
 
-const greatVibes = Great_Vibes({
-  variable: '--font-great-vibes',
+const openSans = Open_Sans({
+  variable: '--font-open-sans',
   subsets: ['latin'],
-  weight: ['400'],
 })
 
 export const Font = {
-  Variables: `${geistSans.variable} ${greatVibes.variable}`,
+  Variables: `${openSans.variable} ${cinzel.variable}`,
 }
