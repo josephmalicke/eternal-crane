@@ -1,5 +1,5 @@
 import React, { HTMLAttributes } from 'react'
-import { cn } from '@/theme/utils/cn'
+import { cn } from '@/theme/cn'
 
 type H1Props = HTMLAttributes<HTMLHeadingElement>
 

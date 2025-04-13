@@ -12,5 +12,5 @@ const openSans = Open_Sans({
 })
 
 export const Font = {
-  Variables: `${openSans.variable} ${cinzel.variable}`,
+  Variables: `antialiased ${openSans.variable} ${cinzel.variable}`,
 }
