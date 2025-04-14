@@ -1,7 +1,15 @@
 {
   "name": "eternal-crane",
+  "description": "Eternal Crane Music Dojo",
+  "author": "Joseph Malicke",
   "version": "0.1.0",
   "private": true,
+  "license": "UNLICENSED",
+  "homepage": "https://eternalcrane.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josephmalicke/eternal-crane"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
