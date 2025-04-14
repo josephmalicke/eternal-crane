@@ -15,7 +15,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "payload": "cross-env NODE_OPTIONS=--no-deprecation PAYLOAD_CONFIG_PATH=\"./app/(payload)/payload.config.ts\" payload",
+    "payload:prod": "cross-env $(cat .env.production | xargs) NODE_OPTIONS=--no-deprecation PAYLOAD_CONFIG_PATH=\"./app/(payload)/payload.config.ts\" payload"
   },
   "dependencies": {
     "@payloadcms/db-postgres": "^3.34.0",
