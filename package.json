@@ -1,14 +1,14 @@
 {
   "name": "eternal-crane",
   "description": "Eternal Crane Music Dojo",
-  "author": "Joseph Malicke",
+  "author": "Robert Malicke",
   "version": "0.1.0",
   "private": true,
   "license": "UNLICENSED",
   "homepage": "https://eternalcrane.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/josephmalicke/eternal-crane"
+    "url": "https://github.com/robertmalicke/eternal-crane"
   },
   "scripts": {
     "dev": "next dev --turbopack",
@@ -24,6 +24,7 @@
     "@payloadcms/email-resend": "^3.34.0",
     "@payloadcms/next": "^3.34.0",
     "@payloadcms/richtext-lexical": "^3.34.0",
+    "@payloadcms/storage-vercel-blob": "^3.34.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.6.5",

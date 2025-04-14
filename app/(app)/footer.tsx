@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-center p-12">
+    <footer className="flex flex-col items-center justify-center p-12 bg-electricPurple">
       <div className="flex gap-6">
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms-of-service">Terms of Service</Link>

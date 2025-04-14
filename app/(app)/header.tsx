@@ -13,25 +13,30 @@ export const Header = () => {
 
 function SiteLogo() {
   return (
-    <Image
-      src={siteLogo}
-      alt="Eternal Crane"
-      width={200}
-      height={200}
-      className="mx-auto"
-    />
+    <Link
+      href="/"
+      className="block transition-all duration-500 hover:scale-110"
+    >
+      <Image
+        src={siteLogo}
+        alt="Eternal Crane Music Dojo"
+        width={200}
+        height={200}
+        className="mx-auto"
+      />
+    </Link>
   )
 }
 
 function Nav() {
   return (
-    <nav>
+    <nav className="bg-electricGreen py-4">
       <ul className="flex justify-center gap-12">
         <li>
           <Link href="/">Account</Link>
         </li>
         <li>
-          <Link href="/">Lessons</Link>
+          <Link href="/courses">Courses</Link>
         </li>
       </ul>
     </nav>

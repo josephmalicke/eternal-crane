@@ -1,21 +1,17 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #f8eed9;
-  --foreground: #000000;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+@theme {
+  --color-electricBlue: #4d9ad3;
+  --color-electricGreen: #76e05e;
+  --color-electricPurple: #9148c9;
+  --color-electricPink: #e13884;
+  --color-electricOrange: #ec9136;
+  --font-open-sans: var(--font-open-sans);
   --font-decorative: var(--font-cinzel);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-open-sans);
-  @apply text-xl;
+  @apply font-open-sans bg-black text-xl text-white;
 }
 
 main {
@@ -27,7 +23,7 @@ a:hover {
 }
 
 nav a {
-  @apply font-decorative text-3xl font-semibold tracking-tighter transition-all duration-500 hover:tracking-wider;
+  @apply font-decorative text-3xl font-semibold tracking-tighter text-black transition-all duration-500 hover:tracking-wider;
 }
 
 footer a {
