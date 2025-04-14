@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@payloadcms/db-postgres": "^3.34.0",
+    "@payloadcms/email-resend": "^3.34.0",
     "@payloadcms/next": "^3.34.0",
     "@payloadcms/richtext-lexical": "^3.34.0",
     "class-variance-authority": "^0.7.1",
@@ -29,7 +30,8 @@
     "next": "15.3.0",
     "payload": "^3.34.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

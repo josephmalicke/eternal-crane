@@ -1267,6 +1267,11 @@
     to-snake-case "1.0.0"
     uuid "9.0.0"
 
+"@payloadcms/email-resend@^3.34.0":
+  version "3.34.0"
+  resolved "https://registry.yarnpkg.com/@payloadcms/email-resend/-/email-resend-3.34.0.tgz#791b0bf7e72c3427eac9fd38c34b570939f14dd0"
+  integrity sha512-gy0QJD08J6V1Y/QoVjqvHnSd1GreL2wuBSubYIIsNPbxKzSxDNvsDfaFP9VnFgecRTa5+qpsNKIkdZE6lO/AyQ==
+
 "@payloadcms/graphql@3.34.0":
   version "3.34.0"
   resolved "https://registry.yarnpkg.com/@payloadcms/graphql/-/graphql-3.34.0.tgz#24384546bc0fc9f902bf821668799481470b939c"
@@ -5613,6 +5618,11 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
+
+zod@^3.24.2:
+  version "3.24.2"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-3.24.2.tgz#8efa74126287c675e92f46871cfc8d15c34372b3"
+  integrity sha512-lY7CDW43ECgW9u1TcT3IoXHflywfVqDYze4waEz812jR/bZ8FHDsl7pFQoSZTz5N+2NqRXs8GBwnAwo3ZNxqhQ==
 
 zwitch@^2.0.0:
   version "2.0.4"

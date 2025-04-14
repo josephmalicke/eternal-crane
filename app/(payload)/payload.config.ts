@@ -5,7 +5,7 @@ import { buildConfig } from 'payload'
 import { fileURLToPath } from 'url'
 import sharp from 'sharp'
 import { Users } from '../(app)/user/collection'
-import { Media } from './collections/Media'
+import { resendAdapter } from '@payloadcms/email-resend'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -17,7 +17,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
+  collections: [Users],
   db: postgresAdapter({
     migrationDir: path.resolve(dirname, 'migrations'),
     pool: {
@@ -26,6 +26,11 @@ export default buildConfig({
   }),
   defaultDepth: 2,
   editor: lexicalEditor(),
+  email: resendAdapter({
+    defaultFromAddress: 'web@eternalcrane.com',
+    defaultFromName: 'Eternal Crane Music Dojo',
+    apiKey: process.env.RESEND_API_KEY || '',
+  }),
   graphQL: {
     disable: true,
   },
