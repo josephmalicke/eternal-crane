@@ -13,6 +13,13 @@ export const Courses: CollectionConfig = {
       required: true,
       unique: true,
     },
+    {
+      name: 'cover',
+      type: 'upload',
+      relationTo: 'media',
+      required: true,
+    },
+    
   ],
   slug: 'courses',
 }

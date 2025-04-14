@@ -9,6 +9,8 @@ import { resendAdapter } from '@payloadcms/email-resend'
 import { vercelBlobStorage } from '@payloadcms/storage-vercel-blob'
 import { Lessons } from '@/app/(app)/lessons/collection'
 import { Courses } from '@/app/(app)/courses/collection'
+import { Media } from '@/app/(payload)/collections/media'
+
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
@@ -19,7 +21,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Courses, Lessons, Users],
+  collections: [Courses, Media, Lessons, Users],
   db: postgresAdapter({
     migrationDir: path.resolve(dirname, 'migrations'),
     pool: {
@@ -40,7 +42,7 @@ export default buildConfig({
     vercelBlobStorage({
       enabled: true,
       clientUploads: true,
-      collections: {},
+      collections: { [Media.slug]: true },
       token: process.env.BLOB_READ_WRITE_TOKEN,
     }),
   ],
